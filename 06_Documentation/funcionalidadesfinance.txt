@@ -1,0 +1,82 @@
+Gestão de projetos
+Transforme a gestão de projetos para aumentar a eficiência e tomar decisões estratégicas de forma ágil e eficaz.
+Organize e faça uma gestão completa de projetos
+Crie subprojetos em cada projeto
+Duplique projetos e subprojetos
+Associe tempo a projetos e monitorize as horas trabalhadas nos mesmos
+Importe projetos e subprojetos e associe os respetivos colaboradores aos mesmos
+Obtenha insights através da secção de Visão Geral de Projetos
+Permita e conecte a Factorial com a chave API
+Aprofunde as informações em cada projetos com campos para a data de inicio, prazos e código interno
+Defina um Gestor principal do projeto
+Defina o Diretor do projeto
+Orçamente o tempo do projeto e obtenha um custo preciso
+Monitorize e controle o custo do projeto por colaborador 
+Registe e monitorize as despesas dentro de cada projeto
+Enterprise
+Analise a evolução do projeto e da distribuição de tempo
+Enterprise
+Defina o custo dos projectos em várias divisas
+Enterprise
+
+Despesas
+Centralize a gestão das despesas e acompanhe as despesas da sua empresa de forma mais eficiente para poupar tempo.
+Acompanhamento de despesas em tempo real 
+Tenha visibilidade e tome decisões analisando o percurso das despesas da sua empresa.
+Leitura inteligente de documentos (OCR)
+Digitalize os seus documentos e facturas para preencher automaticamente os campos de despesas
+Defina e construa fluxos de aprovação com várias etapas
+Defina e construa fluxos de aprovação com etapas e atribua colaboradores
+Insights e relatórios 
+Realize decisões estratégicas com base nos dados e análises que a Fatorial lhe fornece.
+Reembolso através do Recibo de Vencimento 
+Enterprise
+Reembolse o montante das despesas debitadas diretamente nos recibos de vencimento dos seus empregados
+Políticas Ilimitadas de aprovação 
+Enterprise
+Permita que os gestores de equipa aprovem as despesas dos seus colaboradores através da criação de várias políticas de despesas
+Múltiplas aprovações por níveis
+Enterprise
+Defina vários aprovadores para cada fase dos fluxos de aprovação de despesas
+Regras inteligentes para as aprovações automáticas
+Enterprise
+Facilite o processo de aprovação de despesas definindo regras de aprovação automáticas com base em determinados tipos de despesas, montantes, etc.
+Subcategorias personalizadas
+Enterprise
+Tipos de IVA, sincronização de centros de custo e muito mais, diretamente no formulário de despesas
+
+Gestão de Softwares
+Comece a gerir facilmente o software da sua empresa e a controlar os custos de SaaS.
+Notificações de renovação de contratos
+Mantenha-se informado com notificações atempadas para renovações de contratos SaaS, evitando interrupções nos serviços de software.
+Painel de controlo geral e relatórios
+Aceda a um painel de controlo abrangente que oferece informações e relatórios sobre a utilização de SaaS e os custos associados.
+Fluxos de trabalho de aprovação de pagamentos simplificados
+Configure fluxos de aprovação para garantir um processamento eficiente dos pagamentos SaaS.
+Pagamentos de subscrições SaaS sem problemas
+Automatize os pagamentos de subscrições SaaS com a ajuda dos cartões da Factorial
+Gestão de software eficiente em termos de custos
+Faça uma gestão eficaz dos custos de software na sua organização.
+Monitorização do uso de softwares pelos funcionários
+Acompanhe de perto a utilização de software pelos seus colaboradores.
+Pagamentos de subscrições SaaS sem problemas
+Automatize os pagamentos de subscrições SaaS com a ajuda dos cartões da Factorial
+Exportação dos dados de transacções
+Exporte facilmente os detalhes da transação para o Excel para uma análise financeira completa.
+Fluxos de trabalho de aprovação de pagamentos simplificados
+Configure fluxos de aprovação para garantir um processamento eficiente dos pagamentos SaaS.
+Alerta de revogação de acesso a software
+Receba alertas atempados sobre a revogação do acesso ao software, melhorando a segurança e a conformidade.
+
+
+Requisições de compra
+Assuma o controlo dos gastos da sua empresa e capacite cada colaborador com processos de aprovação guiados.
+Centralize todas as requisições de compra
+Exporte as requisições de compra
+Crie fornecedores e organize os respetivos dados, de forma contínua
+Crie fornecedores e organize os respetivos dados, de forma contínua
+Gestão de requisições de compra
+Construa e defina fluxos de aprovação específicos
+Crie cartões de utilização única associados a requisições de compra
+Processamento de faturas
+Fluxos personalizados de aprovação por tipo de pedidos

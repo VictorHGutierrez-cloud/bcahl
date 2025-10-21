@@ -1,0 +1,188 @@
+================================================================================
+                    AHL DESIGN & ENGINEERING SRL
+                    RELATÓRIO FINANCEIRO 2023
+================================================================================
+
+INFORMAÇÕES DA EMPRESA
+================================================================================
+Nome da Empresa:     AHL Design & Engineering SRL
+Endereço:           30 Avenue Général Leclerc - 38200 VIENNE
+SIREN:              921 210 027
+Período:            01/01/2023 a 31/12/2023
+
+================================================================================
+                    BALANÇO PATRIMONIAL - ATIVO (em RON)
+================================================================================
+
+ATIVO IMOBILIZADO (Investimentos de Longo Prazo)
+-------------------------------------------------
+2023:        490.691 RON
+2022:        498.020 RON
+Variação:     -1,5%
+
+Detalhamento:
+- Frais d'établissement:           0 RON (2023) | 0 RON (2022)
+- Recherche et développement:      598 RON (2023) | 1.327 RON (2022) -54,9%
+- Concessions brevets marques:     0 RON (2023) | 0 RON (2022)
+- Terrains:                        0 RON (2023) | 0 RON (2022)
+- Constructions:                   138.239 RON (2023) | 165.982 RON (2022) -16,7%
+- Instalações técnicas:            0 RON (2023) | 0 RON (2022)
+- Outras imobilizações corpóreas:  0 RON (2023) | 0 RON (2022)
+- Participações:                   351.854 RON (2023) | 330.711 RON (2022) +6,4%
+- Outras imobilizações financeiras: 0 RON (2023) | 0 RON (2022)
+
+ATIVO CIRCULANTE (Recursos de Curto Prazo)
+-------------------------------------------
+2023:        15.724.758 RON
+2022:        10.591.153 RON
+Variação:     +48,4%
+
+Detalhamento:
+- Matérias-primas:                 705.862 RON (2023) | 0 RON (2022)
+- Produtos em curso:               0 RON (2023) | 0 RON (2022)
+- Avances sur commandes:           109.370 RON (2023) | 567.648 RON (2022) -80,7%
+- Clientes e contas relacionadas:  8.155.227 RON (2023) | 3.586.631 RON (2022) +127,4%
+- Fornecedores devedores:          69.444 RON (2023) | 0 RON (2022)
+- Estado impostos:                 169.203 RON (2023) | 0 RON (2022)
+- Estado taxas:                    1.610.060 RON (2023) | 2.357.072 RON (2022) -31,7%
+- Outros:                          22.414 RON (2023) | 11.096 RON (2022) +102,3%
+- Disponibilidades (Caixa):        5.462.543 RON (2023) | 3.216.207 RON (2022) +69,8%
+- Charges constatées d'avance:     226.497 RON (2023) | 77.434 RON (2022) +192,4%
+
+TOTAL ATIVO: 16.215.449 RON (2023) | 11.089.173 RON (2022) +46,2%
+
+================================================================================
+                    BALANÇO PATRIMONIAL - PASSIVO (em RON)
+================================================================================
+
+CAPITAL PRÓPRIO
+---------------
+2023:        5.473.932 RON
+2022:        4.021.326 RON
+Variação:     +36,1%
+
+Detalhamento:
+- Capital social:                  5.400 RON (2023) | 5.400 RON (2022) 0%
+- Primes d'émission:               1.080 RON (2023) | 1.080 RON (2022) 0%
+- Reservas:                        4.014.845 RON (2023) | 3.625.525 RON (2022) +10,7%
+- Resultado do exercício:          1.452.607 RON (2023) | 389.321 RON (2022) +273,0%
+
+EMPRÉSTIMOS E DÍVIDAS
+---------------------
+2023:        10.741.517 RON
+2022:        7.067.847 RON
+Variação:     +52,0%
+
+Detalhamento:
+- Empréstimos bancários:           848.377 RON (2023) | 239.564 RON (2022) +254,0%
+- Avances reçus sur commandes:     2.535.039 RON (2023) | 2.415.458 RON (2022) +5,0%
+- Dívidas com fornecedores:        6.200.374 RON (2023) | 4.012.516 RON (2022) +54,5%
+- Dívidas fiscais e sociais:       1.155.262 RON (2023) | 259.326 RON (2022) +345,4%
+  * Segurança social:              581.529 RON (2023) | 212.686 RON (2022) +173,4%
+  * Impostos sobre vendas:         573.733 RON (2023) | 46.668 RON (2022) +1.129,5%
+- Outras dívidas:                  1.157.727 RON (2023) | 400.309 RON (2022) +189,1%
+
+TOTAL PASSIVO: 16.215.449 RON (2023) | 11.089.173 RON (2022) +46,2%
+
+================================================================================
+                    DEMONSTRATIVO DE RESULTADOS (em RON)
+================================================================================
+
+RECEITAS
+--------
+- Vendas de mercadorias:           119.722 RON (2023) | 28.723 RON (2022) +316,8%
+- Produção vendida de serviços:    45.626.970 RON (2023) | 17.968.685 RON (2022) +154,0%
+- Chiffres d'Affaires Nets:        45.746.692 RON (2023) | 17.997.408 RON (2022) +154,2%
+- Produção stockée:                -705.862 RON (2023) | 0 RON (2022)
+- Outros produtos:                 28.099 RON (2023) | 25.221 RON (2022) +11,4%
+- Total produtos exploração:       45.068.929 RON (2023) | 18.728.491 RON (2022) +140,6%
+
+DESPESAS
+--------
+- Achats de matières premières:    9.170.811 RON (2023) | 3.590.970 RON (2022) +155,4%
+- Autres achats et charges externes: 17.633.929 RON (2023) | 10.523.976 RON (2022) +67,6%
+- Impôts taxes et versements:      29.272 RON (2023) | 22.122 RON (2022) +32,3%
+- Salários e tratamentos:          13.156.204 RON (2023) | 3.892.973 RON (2022) +238,0%
+- Charges sociales:                 2.823.344 RON (2023) | 91.512 RON (2022) +2.985,4%
+- Dotações aux amortissements:     58.359 RON (2023) | 44.296 RON (2022) +31,8%
+- Outras despesas:                  36.330 RON (2023) | 19.553 RON (2022) +85,8%
+- Total despesas exploração:        42.908.249 RON (2023) | 18.185.568 RON (2022) +136,0%
+
+RESULTADO OPERACIONAL: 2.160.680 RON (2023) | 542.923 RON (2022) +298,0%
+
+PRODUTOS FINANCEIROS: 420.985 RON (2023) | 261.340 RON (2022) +61,0%
+CHARGES FINANCEIRAS: 515.260 RON (2023) | 344.423 RON (2022) +49,6%
+RESULTADO FINANCEIRO: -94.275 RON (2023) | -83.083 RON (2022) +13,5%
+
+RESULTADO ANTES IMPOSTOS: 2.066.405 RON (2023) | 459.840 RON (2022) +349,5%
+
+CHARGES EXCEPCIONAIS: 187.223 RON (2023) | 918 RON (2022) +20.299,0%
+PARTICIPAÇÃO FUNCIONÁRIOS: 426.577 RON (2023) | 69.601 RON (2022) +512,6%
+
+TOTAL PRODUTOS: 45.489.914 RON (2023) | 18.989.831 RON (2022) +139,6%
+TOTAL DESPESAS: 44.037.309 RON (2023) | 18.600.510 RON (2022) +136,7%
+
+RESULTADO LÍQUIDO: 1.452.605 RON (2023) | 389.321 RON (2022) +273,0%
+
+================================================================================
+                    INDICADORES FINANCEIROS
+================================================================================
+
+Margem de Lucro Líquido:    3,2% (2023) | 2,1% (2022) - MELHORIA!
+Margem Operacional:         4,7% (2023) | 2,9% (2022) - MELHORIA!
+Crescimento Vendas:         154,2% - EXCEPCIONAL!
+Crescimento Lucro:          273,0% - EXCEPCIONAL!
+Crescimento Ativo:          46,2% - SÓLIDO!
+Crescimento Capital Próprio: 36,1% - BOM!
+
+================================================================================
+                    ANÁLISE FINANCEIRA
+================================================================================
+
+PONTOS FORTES:
+✅ Crescimento explosivo em vendas (+154%)
+✅ Lucro líquido cresceu 273%
+✅ Margem de lucro melhorou de 2,1% para 3,2%
+✅ Boa liquidez (5,4 milhões em caixa)
+✅ Investimento em funcionários (participação +513%)
+✅ Empresa em forte crescimento e muito lucrativa
+
+PONTOS DE ATENÇÃO:
+⚠️ Dívidas aumentaram 52%
+⚠️ Muitas contas a receber (8,1 milhões)
+⚠️ Impostos em atraso (573 mil)
+⚠️ Dívidas sociais altas (581 mil)
+⚠️ Precisa controlar endividamento
+
+================================================================================
+                    CONCLUSÃO EXECUTIVA
+================================================================================
+
+A AHL DESIGN & ENGINEERING SRL teve um ano EXCEPCIONAL em 2023:
+
+🚀 CRESCIMENTO EXPLOSIVO: Mais que dobrou as vendas (+154%) e quase 
+   quadruplicou o lucro (+273%)
+
+💰 RENTABILIDADE ALTA: Margem de lucro líquido de 3,2% (acima da média 
+   do setor)
+
+📈 GESTÃO EFICIENTE: Conseguiu crescer rapidamente mantendo controle 
+   sobre custos
+
+👥 INVESTIMENTO EM PESSOAS: Aumentou significativamente a participação 
+   dos funcionários nos lucros
+
+🏆 RESULTADO: Esta é uma empresa SÓLIDA, LUCRATIVA e EM FORTE CRESCIMENTO, 
+   com potencial para continuar expandindo no futuro.
+
+RECOMENDAÇÃO: Empresa com excelente performance financeira e perspectivas 
+promissoras, mas precisa controlar o endividamento para manter o crescimento 
+sustentável.
+
+================================================================================
+                    FIM DO RELATÓRIO
+================================================================================
+
+Documento traduzido e analisado em português
+Data: Dezembro 2024
+Análise: Completa dos documentos contábeis de 2023

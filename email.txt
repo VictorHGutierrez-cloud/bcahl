@@ -1,0 +1,81 @@
+🧪 Challenge Overview. Business Case based on a real company
+
+
+Guidelines
+
+Be pro. Please, answer all the following questions, one by one. Submit your answers as a Powerpoint or PDF document containing your slides.
+
+Be patient. Do not open the attached documents before you reach the 2nd question.
+
+Prospect goal
+
+Our client is AHL Design & Engineering. AHL Design & Engineering has approached Factorial for help with exploring new ways to lower its costs.
+
+
+Situation description
+
+An Account Executive from our Portuguese Market team had an initial meeting with AHL Design & Engineering. She's already scheduled the next meeting for next Thursday and would like to invite our internal consultant (you) so they can ask more specific questions, particularly regarding Factorial Finance modules.
+
+
+Question 1: Company Information & Initial Research
+
+Unfortunately, the Account Executive didn't provide enough information about AHL Design & Engineering. The headquarters are in Romania, but the company is expanding a lot. Before your meeting, please gather all available public information online to get a better understanding of the company. Focus on:
+
+Industry
+
+Size (e.g., revenue, number of employees)
+
+Main activities
+
+Any available financial information
+
+Important: Please be prepared to provide the URL links where you found this information.
+
+Deliverable: Prepare a 1-2 slide presentation (maximum) summarizing your findings about AHL Design & Engineering.
+
+Question 2: Financial Situation Analysis
+
+Just before the meeting, the CFO of AHL Design & Engineering sent some financial information about the company. 
+
+Unfortunately the original document is in French… Good luck! 
+
+Please review this information and provide your comments and insights.
+
+What do you think are the key takeaways from their financial situation?
+
+Helpful Hint: If you were not able to find the financial information by yourself for Question 1, 
+please refer to the attached document for this question.
+
+Deliverable: Prepare a 1-2 slide presentation (maximum) outlining your comments on the company's financial situation.
+
+Question 3: Expense Management Challenges & Discovery Questions
+
+Please note: The scenarios presented below for AHL Design & Engineering are fictive for the purpose of this exercise.
+
+You've done your research, and the Account Executive has provided an update: it seems AHL Design & Engineering has s
+pecific issues with cost management. Due to a lack of tools, the CFO has identified three main problems:
+
+1 > They cannot accurately plan the cost of each project.
+
+2 > They cannot accurately plan the cost of travel expenses.
+
+3 > Their purchasing process is too slow and results in excessive costs.
+
+Please choose ONE of these three problems to focus on for the rest of this question.
+
+First, illustrate what a standard process to evaluate expense management typically looks like in a business, 
+highlighting common pain points (these generally apply across various expense types).
+
+Then, for the specific problem you have chosen, outline the best questions you would ask the CFO in the upcoming meeting.
+
+Deliverable: Prepare a 2-3 slide presentation (maximum) on expense management processes and your proposed discovery questions.
+
+Question 4: Competitive Landscape & Factorial Differentiation
+The meeting has been held, and you collected some valuable information. The CFO mentioned they are also in 
+discussion with Personio and Workday
+
+Considering these competitors, what are the product similarities and differences between them and Factorial?
+
+Do you see any distinct product differentiation that Factorial offers?
+
+Deliverable: Prepare a 2-3 slide presentation (maximum) outlining your competitive analysis.

@@ -1,0 +1,60 @@
+Account Number,Name (French),Type,Disable Account?,External Identifier,Description (Portuguese)
+70000000,Ventes de marchandises,Income,No,FR-70000000,Vendas de mercadorias
+70500000,Prestations de services,Income,No,FR-70500000,Prestações de serviços
+70800000,Retours sur ventes de marchandises,Income,No,FR-70800000,Devoluções de vendas de mercadorias
+75200000,Revenus de locations,Income,No,FR-75200000,Receitas de aluguéis
+75400000,Revenus de commissions,Income,No,FR-75400000,Receitas de comissões
+75900000,Autres revenus de services,Income,No,FR-75900000,Outras receitas de serviços
+60000000,Achats de marchandises,Expense,No,FR-60000000,Compras de mercadorias
+60100000,Achats de matières premières,Expense,No,FR-60100000,Compras de matérias-primas
+60200000,Achats d'autres approvisionnements,Expense,No,FR-60200000,Compras de outros suprimentos
+61000000,Variation des stocks de marchandises,Expense,No,FR-61000000,Variação de estoques de mercadorias
+62000000,Charges de recherche et développement,Expense,No,FR-62000000,Despesas de pesquisa e desenvolvimento
+62100000,Locations et canons,Expense,No,FR-62100000,Aluguéis e taxas
+62200000,Réparations et maintenance,Expense,No,FR-62200000,Reparos e manutenção
+62300000,Services de professionnels indépendants,Expense,No,FR-62300000,Serviços de profissionais independentes
+62400000,Transports,Expense,No,FR-62400000,Transportes
+62500000,Primes d'assurance,Expense,No,FR-62500000,Prêmios de seguro
+62600000,Services bancaires et similaires,Expense,No,FR-62600000,Serviços bancários e similares
+62700000,Publicité et relations publiques,Expense,No,FR-62700000,Publicidade e relações públicas
+62800000,Fournitures,Expense,No,FR-62800000,Suprimentos
+62900000,Autres services,Expense,No,FR-62900000,Outros serviços
+64000000,Salaires et traitements,Expense,No,FR-64000000,Salários e tratamentos
+64100000,Indemnités,Expense,No,FR-64100000,Indenizações
+64200000,Charges sociales à la charge de l'entreprise,Expense,No,FR-64200000,Encargos sociais a cargo da empresa
+65900000,Autres pertes de gestion courante,Expense,No,FR-65900000,Outras perdas de gestão corrente
+67800000,Charges exceptionnelles,Expense,No,FR-67800000,Despesas excepcionais
+57000000,Caisse en euros,Bank,No,FR-57000000,Caixa em euros
+57200000,Banques en euros,Bank,No,FR-57200000,Bancos em euros
+57200001,Compte principal,Bank,No,FR-57200001,Conta principal
+57400000,Banques comptes d'épargne euros,Bank,No,FR-57400000,Bancos contas de poupança euros
+20000000,Frais d'établissement,Non-current Asset,No,FR-20000000,Despesas de estabelecimento
+20100000,Recherche et développement,Non-current Asset,No,FR-20100000,Pesquisa e desenvolvimento
+20200000,Concessions brevets marques,Non-current Asset,No,FR-20200000,Concessões patentes marcas
+21000000,Terrains,Non-current Asset,No,FR-21000000,Terrenos
+21100000,Constructions,Non-current Asset,No,FR-21100000,Construções
+21300000,Installations techniques,Non-current Asset,No,FR-21300000,Instalações técnicas
+21800000,Autres immobilisations corporelles,Non-current Asset,No,FR-21800000,Outras imobilizações corpóreas
+25000000,Participations,Non-current Asset,No,FR-25000000,Participações
+27000000,Autres immobilisations financières,Non-current Asset,No,FR-27000000,Outras imobilizações financeiras
+30000000,Stocks de matières premières,Current Asset,No,FR-30000000,Estoques de matérias-primas
+35000000,Produits en cours,Current Asset,No,FR-35000000,Produtos em curso
+35600000,Avances sur commandes,Current Asset,No,FR-35600000,Adiantamentos sobre pedidos
+41100000,Clients et comptes rattachés,Current Asset,No,FR-41100000,Clientes e contas relacionadas
+40900000,Fournisseurs débiteurs,Current Asset,No,FR-40900000,Fornecedores devedores
+44500000,État impôts,Current Asset,No,FR-44500000,Estado impostos
+44700000,État taxes,Current Asset,No,FR-44700000,Estado taxas
+47000000,Autres,Current Asset,No,FR-47000000,Outros
+53000000,Disponibilités (Trésorerie),Current Asset,No,FR-53000000,Disponibilidades (Tesouraria)
+48600000,Charges constatées d'avance,Current Asset,No,FR-48600000,Despesas antecipadas
+10000000,Capital social,Equity,No,FR-10000000,Capital social
+10100000,Primes d'émission,Equity,No,FR-10100000,Prêmios de emissão
+12000000,Réserves,Equity,No,FR-12000000,Reservas
+13000000,Résultat de l'exercice,Equity,No,FR-13000000,Resultado do exercício
+16000000,Emprunts bancaires,Current Liability,No,FR-16000000,Empréstimos bancários
+41900000,Avances reçus sur commandes,Current Liability,No,FR-41900000,Adiantamentos recebidos sobre pedidos
+40100000,Dettes fournisseurs,Current Liability,No,FR-40100000,Dívidas com fornecedores
+44000000,Dettes fiscales et sociales,Current Liability,No,FR-44000000,Dívidas fiscais e sociais
+44010000,Sécurité sociale,Current Liability,No,FR-44010000,Segurança social
+44020000,Impôts sur les ventes,Current Liability,No,FR-44020000,Impostos sobre vendas
+45000000,Autres dettes,Current Liability,No,FR-45000000,Outras dívidas

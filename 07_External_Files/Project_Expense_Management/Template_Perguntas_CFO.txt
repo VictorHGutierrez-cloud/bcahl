@@ -1,0 +1,182 @@
+================================================================================
+                    TEMPLATE DE PERGUNTAS PARA REUNIÃO COM CFO
+                    Foco: Planejamento de Custos de Projetos
+================================================================================
+
+INSTRUÇÕES DE USO:
+• Use estas perguntas como guia para a reunião
+• Adapte conforme necessário para o contexto da empresa
+• Anote as respostas para análise posterior
+• Priorize as perguntas mais relevantes para o tempo disponível
+
+================================================================================
+                    CHECKLIST PRÉ-REUNIÃO
+================================================================================
+
+□ Confirmar duração da reunião (recomendado: 60-90 minutos)
+□ Preparar apresentação de 10-15 minutos sobre o problema
+□ Levar exemplos de dados históricos se disponíveis
+□ Definir objetivos claros para a reunião
+□ Preparar materiais de apoio (gráficos, exemplos)
+
+================================================================================
+                    ABERTURA DA REUNIÃO (5 minutos)
+================================================================================
+
+"Boa tarde [Nome do CFO]. Obrigado por dedicar seu tempo para esta reunião.
+
+Nosso objetivo hoje é entender melhor o desafio que vocês enfrentam com o 
+planejamento de custos de projetos e como podemos ajudar a resolver essa questão.
+
+Vou fazer algumas perguntas específicas para entender a situação atual, o 
+impacto no negócio e as oportunidades de melhoria. Sinta-se à vontade para 
+compartilhar qualquer informação que considere relevante."
+
+================================================================================
+                    PERGUNTAS PRINCIPAIS (45-60 minutos)
+================================================================================
+
+1. SITUAÇÃO ATUAL (10 minutos)
+─────────────────────────────
+
+"Para começar, gostaria de entender como vocês atualmente planejam os custos 
+de um projeto:
+
+• Pode me descrever o processo passo a passo?
+• Quem é responsável por fazer essas estimativas?
+• Quanto tempo leva para preparar um orçamento completo?
+• Vocês usam algum sistema ou ferramenta específica?"
+
+2. PRECISÃO DAS ESTIMATIVAS (10 minutos)
+───────────────────────────────────────
+
+"Agora sobre a precisão dessas estimativas:
+
+• Quantos projetos ficam dentro do orçamento aprovado?
+• Qual a margem de erro típica entre estimado e realizado?
+• Em que tipos de custos vocês mais erram?
+• Qual o impacto financeiro quando um projeto extrapola o orçamento?"
+
+3. DADOS E SISTEMAS (10 minutos)
+────────────────────────────────
+
+"Sobre os dados e sistemas que vocês usam:
+
+• Que sistemas vocês têm para controlar custos?
+• Como vocês coletam dados históricos de projetos?
+• Esses sistemas conversam entre si?
+• Quem tem acesso a essas informações?"
+
+4. IMPACTO NO NEGÓCIO (10 minutos)
+─────────────────────────────────
+
+"Qual o impacto real dessa situação no negócio:
+
+• Quantos projetos por ano extrapolam o orçamento?
+• Qual o valor médio perdido por projeto?
+• Isso já fez vocês perderem contratos?
+• Como isso afeta o planejamento financeiro da empresa?"
+
+5. CAUSAS E SOLUÇÕES (10 minutos)
+─────────────────────────────────
+
+"Para finalizar, gostaria de entender:
+
+• Na sua opinião, qual a principal causa desse problema?
+• Vocês já tentaram alguma solução antes?
+• Qual o orçamento disponível para melhorar isso?
+• Em quanto tempo vocês gostariam de ver resultados?"
+
+================================================================================
+                    PERGUNTAS DE SEGUIMENTO (conforme necessário)
+================================================================================
+
+SE O CFO MENCIONAR FALTA DE DADOS:
+• "Que tipo de dados vocês gostariam de ter?"
+• "Como vocês poderiam coletar esses dados?"
+• "Existe alguma fonte de dados que vocês não estão usando?"
+
+SE O CFO MENCIONAR PROBLEMAS DE PROCESSO:
+• "Qual parte do processo vocês acham mais problemática?"
+• "Existe resistência da equipe para mudanças?"
+• "Como vocês comunicam mudanças de processo?"
+
+SE O CFO MENCIONAR LIMITAÇÕES TECNOLÓGICAS:
+• "Que funcionalidades vocês gostariam que o sistema tivesse?"
+• "Qual o orçamento para investimento em tecnologia?"
+• "Existe alguma restrição técnica que devemos considerar?"
+
+SE O CFO MENCIONAR PROBLEMAS DE EQUIPE:
+• "A equipe tem treinamento adequado?"
+• "Existe rotatividade alta na área de projetos?"
+• "Como vocês avaliam a performance da equipe?"
+
+================================================================================
+                    FECHAMENTO DA REUNIÃO (5 minutos)
+================================================================================
+
+"Perfeito, [Nome do CFO]. Agradeço muito pelas informações compartilhadas.
+
+Com base no que conversamos, vou preparar uma proposta detalhada que incluirá:
+
+• Análise da situação atual
+• Identificação das principais causas do problema
+• Proposta de solução customizada
+• Cronograma de implementação
+• Estimativa de ROI e benefícios esperados
+
+Vou enviar isso para você em [prazo] para revisão. Tem alguma pergunta adicional 
+ou algo que gostaria de acrescentar?
+
+Também gostaria de agendar uma reunião de follow-up em [data] para apresentar 
+a proposta. Funciona para você?"
+
+================================================================================
+                    TEMPLATE DE ANOTAÇÕES
+================================================================================
+
+DATA DA REUNIÃO: _______________
+DURAÇÃO: _______________
+PARTICIPANTES: _______________
+
+PRINCIPAIS PONTOS DISCUTIDOS:
+─────────────────────────────
+• 
+• 
+• 
+• 
+
+PROBLEMAS IDENTIFICADOS:
+────────────────────────
+• 
+• 
+• 
+• 
+
+OPORTUNIDADES MENCIONADAS:
+──────────────────────────
+• 
+• 
+• 
+• 
+
+PRÓXIMOS PASSOS:
+────────────────
+• 
+• 
+• 
+• 
+
+OBSERVAÇÕES ADICIONAIS:
+──────────────────────
+• 
+• 
+• 
+• 
+
+================================================================================
+                    FIM DO TEMPLATE
+================================================================================
+
+Lembre-se: O objetivo é entender o problema, não vender a solução ainda!
+Foque em ouvir, entender e coletar informações valiosas.

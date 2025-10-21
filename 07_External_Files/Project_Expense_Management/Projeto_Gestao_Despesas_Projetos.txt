@@ -1,0 +1,215 @@
+================================================================================
+                    PROJETO: GESTÃO DE DESPESAS DE PROJETOS
+                    Análise e Solução para Planejamento de Custos
+================================================================================
+
+PROBLEMA ESCOLHIDO: #1 - "They cannot accurately plan the cost of each project"
+
+JUSTIFICATIVA DA ESCOLHA:
+- Impacto direto na lucratividade da empresa
+- Afeta o planejamento financeiro e orçamentário
+- Pode resultar em perdas significativas por subestimação de custos
+- É um problema sistêmico que afeta todos os projetos
+- Tem potencial de retorno financeiro imediato quando resolvido
+
+================================================================================
+                    PROCESSO PADRÃO DE AVALIAÇÃO DE GESTÃO DE DESPESAS
+================================================================================
+
+1. IDENTIFICAÇÃO E CATEGORIZAÇÃO DE DESPESAS
+   ──────────────────────────────────────────
+   • Classificação por tipo (materiais, mão-de-obra, equipamentos, etc.)
+   • Categorização por projeto, departamento ou centro de custo
+   • Separação entre custos diretos e indiretos
+   • Identificação de custos fixos vs. variáveis
+
+   PAIN POINTS COMUNS:
+   ❌ Falta de padronização na categorização
+   ❌ Despesas não categorizadas ou mal classificadas
+   ❌ Dificuldade em separar custos diretos de indiretos
+   ❌ Ausência de códigos de projeto consistentes
+
+2. COLETA E REGISTRO DE DADOS
+   ──────────────────────────
+   • Captura de despesas em tempo real
+   • Digitalização de comprovantes e recibos
+   • Integração entre sistemas de diferentes departamentos
+   • Validação e aprovação de despesas
+
+   PAIN POINTS COMUNS:
+   ❌ Processo manual e propenso a erros
+   ❌ Atraso no registro de despesas
+   ❌ Perda de comprovantes e documentos
+   ❌ Falta de integração entre sistemas
+   ❌ Aprovações demoradas e burocráticas
+
+3. ANÁLISE E CONTROLE
+   ──────────────────
+   • Comparação entre orçado vs. realizado
+   • Análise de variações e desvios
+   • Identificação de tendências e padrões
+   • Relatórios de performance por projeto
+
+   PAIN POINTS COMUNS:
+   ❌ Relatórios desatualizados ou imprecisos
+   ❌ Falta de visibilidade em tempo real
+   ❌ Dificuldade em identificar causas de desvios
+   ❌ Ausência de alertas para despesas excessivas
+   ❌ Relatórios complexos e difíceis de interpretar
+
+4. PLANEJAMENTO E ORÇAMENTAÇÃO
+   ───────────────────────────
+   • Estimativas baseadas em dados históricos
+   • Previsão de custos futuros
+   • Alocação de recursos por projeto
+   • Revisão e ajuste de orçamentos
+
+   PAIN POINTS COMUNS:
+   ❌ Estimativas baseadas em "achismo" ao invés de dados
+   ❌ Falta de dados históricos confiáveis
+   ❌ Não consideração de fatores externos (inflação, sazonalidade)
+   ❌ Orçamentos não revisados regularmente
+   ❌ Falta de contingências adequadas
+
+5. MONITORAMENTO E AÇÃO CORRETIVA
+   ──────────────────────────────
+   • Acompanhamento contínuo de despesas
+   • Identificação de problemas em tempo real
+   • Implementação de ações corretivas
+   • Aprendizado para projetos futuros
+
+   PAIN POINTS COMUNS:
+   ❌ Monitoramento reativo ao invés de proativo
+   ❌ Falta de alertas automáticos
+   ❌ Ações corretivas implementadas tarde demais
+   ❌ Não há aprendizado sistêmico com erros passados
+
+================================================================================
+                    PERGUNTAS ESTRATÉGICAS PARA O CFO
+                    (Foco: Planejamento de Custos de Projetos)
+================================================================================
+
+SEÇÃO 1: DIAGNÓSTICO ATUAL
+──────────────────────────
+
+1.1 Processo Atual de Planejamento
+   • Como vocês atualmente estimam os custos de um novo projeto?
+   • Quais dados históricos vocês utilizam para essas estimativas?
+   • Existe um processo padronizado ou cada gerente de projeto faz de forma diferente?
+   • Quanto tempo leva para preparar um orçamento de projeto?
+
+1.2 Precisão das Estimativas
+   • Qual a margem de erro típica entre custos estimados e reais?
+   • Em que tipos de custos vocês mais erram (materiais, mão-de-obra, equipamentos)?
+   • Quantos projetos ficam dentro do orçamento aprovado?
+   • Qual o impacto financeiro médio dos projetos que extrapolam o orçamento?
+
+1.3 Dados e Sistemas
+   • Que sistemas vocês usam para controlar custos de projetos?
+   • Como vocês coletam e armazenam dados de custos históricos?
+   • Existe integração entre os sistemas de compras, RH e projetos?
+   • Quem tem acesso aos dados de custos e como são compartilhados?
+
+SEÇÃO 2: IMPACTO FINANCEIRO
+───────────────────────────
+
+2.1 Perdas por Subestimação
+   • Qual o valor médio que vocês perdem por projeto devido a estimativas incorretas?
+   • Quantos projetos por ano extrapolam o orçamento?
+   • Qual o impacto total anual dessas perdas no resultado da empresa?
+   • Vocês já perderam contratos por estimativas muito altas?
+
+2.2 Custos de Oportunidade
+   • Quantos projetos vocês poderiam ter aceito com estimativas mais precisas?
+   • Qual o valor de receita perdida por não conseguir competir adequadamente?
+   • Como a imprecisão afeta a capacidade de planejamento financeiro da empresa?
+
+SEÇÃO 3: CAUSAS RAIZ
+────────────────────
+
+3.1 Fatores Internos
+   • Falta de dados históricos confiáveis?
+   • Processo de estimativa inadequado?
+   • Falta de treinamento da equipe?
+   • Ausência de ferramentas adequadas?
+   • Comunicação inadequada entre departamentos?
+
+3.2 Fatores Externos
+   • Volatilidade de preços de materiais?
+   • Mudanças regulatórias?
+   • Condições de mercado imprevisíveis?
+   • Dependência de fornecedores específicos?
+
+SEÇÃO 4: SOLUÇÕES E RECURSOS
+────────────────────────────
+
+4.1 Recursos Disponíveis
+   • Qual o orçamento disponível para melhorar o processo?
+   • Quantas pessoas podem ser dedicadas ao projeto?
+   • Existe suporte da alta direção para mudanças?
+   • Qual o prazo esperado para implementação?
+
+4.2 Prioridades
+   • Qual o maior problema que vocês gostariam de resolver primeiro?
+   • Que tipo de retorno vocês esperam do investimento?
+   • Existe alguma solução que vocês já consideraram?
+   • Há alguma restrição específica que devemos considerar?
+
+SEÇÃO 5: MÉTRICAS DE SUCESSO
+────────────────────────────
+
+5.1 Indicadores Atuais
+   • Quais métricas vocês usam hoje para medir a precisão das estimativas?
+   • Como vocês avaliam o sucesso de um projeto do ponto de vista financeiro?
+   • Existe algum benchmark ou meta de precisão estabelecida?
+
+5.2 Objetivos Futuros
+   • Qual nível de precisão vocês gostariam de alcançar?
+   • Em quanto tempo vocês esperam ver melhorias?
+   • Que indicadores vocês considerariam como sucesso?
+
+================================================================================
+                    ESTRATÉGIA DE IMPLEMENTAÇÃO SUGERIDA
+================================================================================
+
+FASE 1: DIAGNÓSTICO DETALHADO (2-3 semanas)
+• Análise completa do processo atual
+• Mapeamento de todos os tipos de custos
+• Identificação de gaps e oportunidades
+• Benchmarking com melhores práticas
+
+FASE 2: DESENVOLVIMENTO DA SOLUÇÃO (4-6 semanas)
+• Criação de modelo de estimativa baseado em dados
+• Desenvolvimento de ferramentas e templates
+• Treinamento da equipe
+• Testes piloto com projetos selecionados
+
+FASE 3: IMPLEMENTAÇÃO (6-8 semanas)
+• Rollout gradual por departamento
+• Acompanhamento e ajustes
+• Medição de resultados
+• Refinamento contínuo
+
+FASE 4: OTIMIZAÇÃO (Contínua)
+• Análise de performance
+• Melhorias baseadas em feedback
+• Expansão para outros tipos de despesas
+• Integração com outros sistemas
+
+================================================================================
+                    PRÓXIMOS PASSOS
+================================================================================
+
+1. Agendar reunião com CFO usando as perguntas estruturadas acima
+2. Realizar entrevistas com gerentes de projeto e equipe financeira
+3. Analisar dados históricos de custos de projetos
+4. Desenvolver proposta de solução customizada
+5. Apresentar business case com ROI estimado
+
+================================================================================
+                    FIM DO DOCUMENTO
+================================================================================
+
+Documento preparado para: Reunião estratégica com CFO
+Foco: Resolução do problema de planejamento de custos de projetos
+Data: Dezembro 2024

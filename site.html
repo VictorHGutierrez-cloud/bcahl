@@ -1,0 +1,1296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AHL Design & Engineering SRL - Business Case Analysis</title>
+    <!-- Load Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Load Chart.js for data visualization -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.3/dist/chart.umd.min.js"></script>
+    <!-- Lucide icons for professional visuals -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    
+    <!-- Fallback CSS in case Tailwind doesn't load -->
+    <style>
+        /* Basic fallback styles */
+        .fallback-styles {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+        }
+        .slide-fallback {
+            background: white;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 20px;
+            margin: 10px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .button-fallback {
+            background-color: #3b82f6;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            margin: 5px;
+        }
+        .button-fallback:hover {
+            background-color: #2563eb;
+        }
+        .button-fallback:disabled {
+            background-color: #9ca3af;
+            cursor: not-allowed;
+        }
+    </style>
+    
+    <style>
+        /* Define Inter font for a clean, modern look */
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap');
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f7f9fb;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        /* Fixed size for presentation view (simulating 16:9 aspect ratio) */
+        .presentation-slide {
+            width: 1024px;
+            height: 576px;
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            padding: 40px 60px;
+            position: relative;
+            display: none; /* Controlled by JavaScript */
+            transition: opacity 0.3s ease-in-out;
+        }
+        .header-title {
+            color: #FF355E; /* Radical Red */
+            font-weight: 800;
+        }
+        .footer-logo {
+            color: #FF355E; /* Radical Red */
+            font-weight: 700;
+        }
+        /* Styling for charts to fit the slide */
+        .chart-container {
+            width: 100%;
+            height: 380px;
+            margin-top: 10px;
+        }
+        /* Custom list style for icons */
+        .icon-list li {
+            display: flex;
+            align-items: center;
+            margin-bottom: 0.75rem;
+            font-size: 1.125rem;
+        }
+        .icon-list li svg {
+            margin-right: 0.75rem;
+            flex-shrink: 0;
+        }
+        /* Ensure proper alignment for flex items with icons */
+        .flex.items-center i[data-lucide] {
+            flex-shrink: 0;
+        }
+        /* Better spacing for chart containers */
+        .chart-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    </style>
+</head>
+<body>
+
+<div id="presentation-container" class="relative">
+    <!-- Navigation Controls -->
+    <div class="absolute inset-x-0 bottom-0 flex justify-center space-x-4 mb-4 z-10 pointer-events-none">
+        <button id="prevBtn" class="bg-gray-700 hover:bg-gray-800 text-white font-medium py-1 px-3 rounded-full shadow-md transition duration-150 ease-in-out pointer-events-auto text-sm">
+            &larr; Previous
+        </button>
+        <div id="pageNumber" class="flex items-center text-gray-800 bg-white px-3 py-1 rounded-full shadow-sm pointer-events-none font-medium text-sm"></div>
+        <button id="nextBtn" class="text-white font-medium py-1 px-3 rounded-full shadow-md transition duration-150 ease-in-out pointer-events-auto text-sm" style="background-color: #FF355E;" onmouseover="this.style.backgroundColor='#E02E4F'" onmouseout="this.style.backgroundColor='#FF355E'">
+            Next &rarr;
+        </button>
+    </div>
+
+    <!-- --------------------------------- SLIDE CONTENT START --------------------------------- -->
+
+    <!-- SLIDE 1: TITLE SLIDE -->
+    <div id="slide-1" class="presentation-slide flex flex-col justify-between">
+        <div class="text-right">
+            <span class="text-lg font-semibold text-gray-500">Prepared for: Finance Pre-Sales Position</span>
+        </div>
+        <div class="text-center mt-[-50px]">
+            <h1 class="text-6xl header-title mb-6">AHL Design & Engineering SRL</h1>
+            <h2 class="text-4xl text-gray-700 font-light mb-10">Business Case Analysis with Factorial Finance</h2>
+            <p class="text-2xl font-medium mb-2" style="color: #FF355E;">Cost Reduction Strategy & Financial Optimization</p>
+        </div>
+        <div class="grid grid-cols-2 text-xl text-gray-600 border-t pt-4">
+            <div>
+                <p>Victor Gutierrez</p>
+               <p> Sr. Account Executive & Partner Manager</p>
+            </div>
+            <div class="text-right"> <br>
+                <p>Date: October 22, 2025</p>
+                <p class="footer-logo text-1xl">FACTORIAL <span class="text-gray-800">FINANCE</span></p>
+            </div>
+        </div>
+    </div>
+
+    <!-- SLIDE 2: AGENDA -->
+    <div id="slide-2" class="presentation-slide">
+        <h1 class="text-4xl header-title border-b pb-3 mb-8">Agenda</h1>
+        <ul class="space-y-4 text-2xl text-gray-700 font-light mt-1">
+            <li class="flex items-center"><i data-lucide="info" class="w-8 h-8 mr-4 flex-shrink-0" style="color: #FF355E;"></i> Company Information & Initial Research</li>
+            <li class="flex items-center"><i data-lucide="bar-chart-3" class="w-8 h-8 mr-4 flex-shrink-0" style="color: #FF355E;"></i> Financial Situation Analysis</li>
+            <li class="flex items-center ml-10 text-xl font-medium text-gray-600"><i data-lucide="chevrons-right" class="w-6 h-6 mr-3 flex-shrink-0"></i> Key Findings & Insights</li>
+            <li class="flex items-center ml-10 text-xl font-medium text-gray-600"><i data-lucide="chevrons-right" class="w-6 h-6 mr-3 flex-shrink-0"></i> Areas Requiring Attention</li>
+            <li class="flex items-center"><i data-lucide="shield" class="w-8 h-8 mr-4 flex-shrink-0" style="color: #FF355E;"></i> Competitive Landscape Analysis</li>
+            <li class="flex items-center"><i data-lucide="target" class="w-8 h-8 mr-4 flex-shrink-0" style="color: #FF355E;"></i> Factorial's Unique Value Proposition</li>
+            <li class="flex items-center"><i data-lucide="settings" class="w-8 h-8 mr-4 flex-shrink-0" style="color: #FF355E;"></i> Project Cost Management Solution</li>
+            <li class="flex items-center"><i data-lucide="trending-up" class="w-8 h-8 mr-4 flex-shrink-0" style="color: #FF355E;"></i> Expected Impact & ROI</li>
+            <li class="flex items-center"><i data-lucide="message-square" class="w-8 h-8 mr-4 flex-shrink-0" style="color: #FF355E;"></i> Q&A</li>
+        </ul>
+    </div>
+
+    <!-- SLIDE 3: STRATEGIC PROCESS FLOW -->
+    <div id="slide-3" class="presentation-slide">
+        <h1 class="text-4xl header-title border-b pb-3 mb-6">🧠 My Strategic Process Flow</h1>
+        <p class="text-center text-xl font-semibold text-gray-700 mt-1 mb-5">From Ambiguity to Business Impact: A Data-Driven Approach</p>
+        
+        <!-- Process Flow Container -->
+        <div class="flex flex-col lg:flex-row justify-between items-stretch space-y-4 lg:space-y-0 lg:space-x-2">
+            
+            <!-- STEP 1: Research -->
+            <div class="lg:w-1/5 step-container relative">
+                <div class="step-card bg-white rounded-xl p-4 border-t-4 border-indigo-500 flex flex-col justify-start">
+                    <div class="flex items-center space-x-2 mb-3">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#2563EB" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-6 h-6 text-indigo-600"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
+                        <h2 class="text-sm font-bold text-gray-900">1. RESEARCH & VERIFICATION</h2>
+                    </div>
+                    <div class="flex-grow">
+                        <p class="text-xs font-semibold text-indigo-600 mb-2">Deep Research (Structured Data)</p>
+                        <ul class="list-disc pl-3 text-gray-600 text-xs space-y-1">
+                            <li>Initial Google search for public data.</li>
+                            <li>Leveraged <strong>Gemini Pro</strong> to consolidate scattered data and cross-verify facts.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- STEP 2: Data Extraction -->
+            <div class="lg:w-1/5 step-container relative">
+                <div class="step-card bg-white rounded-xl p-4 border-t-4 border-blue-500 flex flex-col justify-start">
+                    <div class="flex items-center space-x-2 mb-3">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#2563EB" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-6 h-6 text-blue-600"><path d="M4 7V4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v3"/><path d="M4 17v3a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-3"/><path d="M12 11v6"/><path d="M12 7v4"/><path d="M8 11h8"/></svg>
+                        <h2 class="text-sm font-bold text-gray-900">2. DATA EXTRACTION</h2>
+                    </div>
+                    <div class="flex-grow">
+                        <p class="text-xs font-semibold text-blue-600 mb-2">Financial Reports & Structuring</p>
+                        <ul class="list-disc pl-3 text-gray-600 text-xs space-y-1">
+                            <li>Retrieved official financial statements via <strong>RISCO</strong> platform.</li>
+                            <li>Used <strong>Cursor AI</strong> to extract unstructured data from PDFs.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- STEP 3: Analysis -->
+            <div class="lg:w-1/5 step-container relative">
+                <div class="step-card bg-white rounded-xl p-4 border-t-4 border-sky-500 flex flex-col justify-start">
+                    <div class="flex items-center space-x-2 mb-3">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#2563EB" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-6 h-6 text-sky-600"><path d="m5 12 6-6 6 6"/><path d="m5 18 6-6 6 6"/></svg>
+                        <h2 class="text-sm font-bold text-gray-900">3. ANALYSIS & REPORTING</h2>
+                    </div>
+                    <div class="flex-grow">
+                        <p class="text-xs font-semibold text-sky-600 mb-2">Automated Financial Summaries</p>
+                        <ul class="list-disc pl-3 text-gray-600 text-xs space-y-1">
+                            <li>Employed <strong>Python scripts</strong> to generate automated reports.</li>
+                            <li>Ensured high data consistency and standardized reporting.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- STEP 4: Insight -->
+            <div class="lg:w-1/5 step-container relative">
+                <div class="step-card bg-white rounded-xl p-4 border-t-4 border-cyan-500 flex flex-col justify-start">
+                    <div class="flex items-center space-x-2 mb-3">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#2563EB" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-6 h-6 text-cyan-600"><path d="M15.2 22a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4l9-9 7-7 4 4-7 7-9 9z"/><path d="M12 18h.01"/></svg>
+                        <h2 class="text-sm font-bold text-gray-900">4. INSIGHT GENERATION</h2>
+                    </div>
+                    <div class="flex-grow">
+                        <p class="text-xs font-semibold text-cyan-600 mb-2">Bottlenecks & Risk Zones</p>
+                        <ul class="list-disc pl-3 text-gray-600 text-xs space-y-1">
+                            <li>Analyzed assets, liabilities, and profitability.</li>
+                            <li>Identified main operational <strong>bottlenecks and key risk zones</strong>.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- STEP 5: Solution Mapping -->
+            <div class="lg:w-1/5 step-container relative">
+                <div class="step-card bg-white rounded-xl p-4 border-t-4 border-teal-500 flex flex-col justify-start">
+                    <div class="flex items-center space-x-2 mb-3">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#2563EB" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-6 h-6 text-teal-600"><path d="M12 2a10 10 0 0 0-9 15.3l-1 4.7 4.7-1A10 10 0 1 0 12 2z"/></svg>
+                        <h2 class="text-sm font-bold text-gray-900">5. SOLUTION MAPPING</h2>
+                    </div>
+                    <div class="flex-grow">
+                        <p class="text-xs font-semibold text-teal-600 mb-2">Impact-Driven HR Fit</p>
+                        <ul class="list-disc pl-3 text-gray-600 text-xs space-y-1">
+                            <li>Mapped insights to relevant <strong>Factorial HR modules</strong>.</li>
+                            <li>Targeted areas with <strong>highest potential business impact</strong>.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Methodology Summary -->
+        <div class="mt-1 mb-8 p-4 rounded-lg" style="background-color: #FFF0F2; border-left: 4px solid #FF355E;">
+            <h3 class="text-lg font-semibold mb-2" style="color: #CC1A3A;">Core Methodology Summary</h3>
+            <p class="text-sm text-gray-600">
+                This process showcases a rigorous, data-driven approach, moving from public data and <strong>AI-powered verification</strong> to <strong>automated financial analysis</strong> and strategic <strong>HR solution mapping</strong>, ensuring recommendations are grounded in verified business context.
+            </p>
+        </div>
+    </div>
+
+    <!-- SLIDE 4: COMPANY OVERVIEW -->
+    <div id="slide-4" class="presentation-slide">
+        <h1 class="text-4xl header-title border-b pb-3 mb-8">Company Overview: AHL Design & Engineering</h1>
+        <div class="grid grid-cols-2 gap-8 text-gray-700">
+            <div>
+                <h2 class="text-2xl font-semibold mb-4" style="color: #FF355E;">Core Business</h2>
+                <ul class="space-y-3 text-lg icon-list">
+                    <li><i data-lucide="briefcase" class="text-gray-500"></i> Industry: Design & Engineering Services</li>
+                    <li><i data-lucide="wrench" class="text-gray-500"></i> Expertise: HVAC, Plumbing, Cleanrooms</li>
+                    <li><i data-lucide="heart-handshake" class="text-gray-500"></i> Market Focus: Pharmaceutical & Healthcare Turnkey Projects</li>
+                </ul>
+            </div>
+            <div>
+                <h2 class="text-2xl font-semibold mb-4" style="color: #FF355E;">Corporate Details</h2>
+                <ul class="space-y-3 text-lg icon-list">
+                    <li><i data-lucide="map-pin" class="text-gray-500"></i> Headquarters: VIENNE, France</li>
+                    <li><i data-lucide="file-text" class="text-gray-500"></i> SIREN: 921 210 027 | Legal Status: SRL</li>
+                    <li><i data-lucide="globe" class="text-gray-500"></i> International Presence: 5 offices (Benin, Morocco, Sweden, France, Romania)</li>
+                </ul>
+            </div>
+        </div>
+        <p class="mt-8 text-xl font-medium border-t pt-4 text-gray-600">A high-growth engineering firm specializing in complex, high-value projects, firmly focused on the international market. 
+            </p>
+    </div>
+
+    <!-- SLIDE 5: EXCEPTIONAL BUSINESS PERFORMANCE (2023) -->
+    <div id="slide-5" class="presentation-slide">
+        <h1 class="text-4xl header-title border-b pb-3 mb-8">Exceptional Business Performance (2023)</h1>
+        <div class="grid grid-cols-3 gap-6 text-center">
+            <div class="p-6 rounded-lg bg-green-50">
+                <p class="text-sm font-semibold text-green-700">Total Revenue</p>
+                <p class="text-4xl font-extrabold text-green-800 mt-1">€45.7M</p>
+                <p class="text-lg text-green-600 font-medium mt-1">+154% YOY Growth</p>
+            </div>
+            <div class="p-6 rounded-lg" style="background-color: #FFF0F2;">
+                <p class="text-sm font-semibold" style="color: #CC1A3A;">Net Profit</p>
+                <p class="text-4xl font-extrabold mt-1" style="color: #B31E3A;">€1.5M</p>
+                <p class="text-lg font-medium mt-1" style="color: #FF355E;">+273% YOY Growth</p>
+            </div>
+            <div class="p-6 rounded-lg bg-yellow-50">
+                <p class="text-sm font-semibold text-yellow-700">Total Assets</p>
+                <p class="text-4xl font-extrabold text-yellow-800 mt-1">€16.2M</p>
+                <p class="text-lg text-yellow-600 font-medium mt-1">+46% YOY Growth</p>
+            </div>
+        </div>
+
+        <div class="mt-8 grid grid-cols-2 gap-8 text-gray-700">
+            <ul class="space-y-2 text-lg icon-list">
+                <li><i data-lucide="dollar-sign" class="text-gray-500"></i> Available Cash: €5.5 Million </li>
+                <li><i data-lucide="trending-up" class="text-gray-500"></i> Net Margin: 3.2% (Improved from 2.1%)</li>
+            </ul>
+            <ul class="space-y-2 text-lg icon-list">
+                <li><i data-lucide="users" class="text-gray-500"></i> Employees: 77 (+33% growth)</li>
+                <li><i data-lucide="check-circle" class="text-gray-500"></i> High Credit Rating: 7.7/10</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- SLIDE 6: FINANCIAL GROWTH ANALYSIS (Chart) -->
+    <div id="slide-6" class="presentation-slide">
+        <h1 class="text-4xl header-title border-b pb-3 mb-8">Financial Growth Analysis: 2022 vs 2023</h1>
+        <div class="chart-container">
+            <canvas id="growthChart"></canvas>
+        </div>
+        <p class="text-center text-lg text-gray-600 mt-4 font-medium">Profit and Revenue growth significantly outpaced Asset and Headcount expansion, indicating strong operational leverage.</p>
+    </div>
+
+    <!-- SLIDE 7: EXECUTIVE DASHBOARD -->
+    <div id="slide-7" class="presentation-slide">
+        <h1 class="text-4xl header-title border-b pb-3 mb-8">Executive Dashboard: Key Financial Health Metrics</h1>
+        <div class="grid grid-cols-3 gap-6">
+            <div class="p-4 rounded-lg bg-blue-50">
+                <p class="text-sm font-semibold text-blue-700">CASH POSITION</p>
+                <p class="text-3xl font-extrabold text-blue-800 mt-1">€5.5M</p>
+                <p class="text-xs text-blue-600">High liquidity provides stability.</p>
+            </div>
+            <div class="p-4 rounded-lg" style="background-color: #FFF0F2;">
+                <p class="text-sm font-semibold" style="color: #CC1A3A;">PROFITABILITY</p>
+                <p class="text-3xl font-extrabold mt-1" style="color: #B31E3A;">3.2% / 4.7%</p>
+                <p class="text-xs" style="color: #FF355E;">Net Margin / Operational Margin</p>
+            </div>
+            <div class="p-4 rounded-lg bg-gray-100">
+                <p class="text-sm font-semibold text-gray-700">REVENUE BREAKDOWN</p>
+                <p class="text-3xl font-extrabold text-gray-800 mt-1">99.7%</p>
+                <p class="text-xs text-gray-600">Focus on High-Margin Services</p>
+            </div>
+            <div class="col-span-3 mt-4">
+                <h3 class="text-xl font-semibold text-gray-700 mb-3">Working Capital Snapshot</h3>
+                <div class="flex justify-between p-4 rounded-lg bg-yellow-50 border-l-4 border-yellow-500">
+                    <p class="text-lg font-medium text-gray-700">Accounts Receivable (AR)</p>
+                    <p class="text-2xl font-extrabold text-yellow-800">€8.2M</p>
+                    <p class="text-sm text-gray-500 self-end">(18% of Revenue)</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- SLIDE 8: ASSETS & LIABILITIES COMPOSITION (Pie Charts) -->
+    <div id="slide-8" class="presentation-slide">
+        <h1 class="text-4xl header-title border-b pb-3 mb-8">Assets & Liabilities Composition (2023)</h1>
+        <div class="grid grid-cols-2 gap-8">
+            <div>
+                <h3 class="text-2xl font-semibold mb-4 text-center" style="color: #FF355E;">Assets Structure: High Liquidity</h3>
+                <div class="chart-container h-64 flex justify-center">
+                    <canvas id="assetsCompositionChart"></canvas>
+                </div>
+                <p class="text-center text-sm text-gray-600 mt-2">Current Assets (€15.7M) form 97% of the total base.</p>
+            </div>
+            <div>
+                <h3 class="text-2xl font-semibold mb-4 text-center" style="color: #FF355E;">Liabilities Structure: High Leverage</h3>
+                <div class="chart-container h-64 flex justify-center">
+                    <canvas id="liabilitiesCompositionChart"></canvas>
+                </div>
+                <p class="text-center text-sm text-gray-600 mt-2">Total Debt (€10.7M) accounts for 66% of funding.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- SLIDE 9: REVENUE & EXPENSES ANALYSIS (Pie Charts) -->
+    <div id="slide-9" class="presentation-slide">
+        <h1 class="text-4xl header-title border-b pb-3 mb-8">Revenue & Expense Analysis</h1>
+        <div class="grid grid-cols-2 gap-8">
+            <div>
+                <h3 class="text-2xl font-semibold mb-4 text-center" style="color: #FF355E;">Revenue Mix (€45.7M)</h3>
+                <div class="chart-container h-64 flex justify-center">
+                    <canvas id="revenueMixChart"></canvas>
+                </div>
+                <p class="text-center text-sm text-gray-600 mt-2">Revenue is almost entirely driven by high-value Engineering Services (99.7%).</p>
+            </div>
+            <div>
+                <h3 class="text-2xl font-semibold mb-4 text-center" style="color: #FF355E;">Expense Breakdown (Personnel vs. External)</h3>
+                <div class="chart-container h-64 flex justify-center">
+                    <canvas id="expenseMixChart"></canvas>
+                </div>
+                <p class="text-center text-sm text-gray-600 mt-2">External Purchases (67%) dominate the cost structure, primarily materials and other external services.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- SLIDE 10: FINANCIAL INDICATORS & MARGINS (Comparison Chart) -->
+    <div id="slide-10" class="presentation-slide">
+        <h1 class="text-4xl header-title border-b pb-3 mb-8">Profitability Margins: 2022 vs 2023</h1>
+        <div class="chart-container">
+            <canvas id="marginChart"></canvas>
+        </div>
+        <div class="grid grid-cols-3 mt-4 text-center border-t pt-4">
+            <div class="text-gray-700">
+                <p class="text-2xl font-bold">€593K</p>
+                <p class="text-sm">Revenue per Employee</p>
+            </div>
+            <div class="text-gray-700">
+                <p class="text-2xl font-bold">€19.5K</p>
+                <p class="text-sm">Profit per Employee</p>
+            </div>
+            <div class="text-gray-700">
+                <p class="text-2xl font-bold">+52% / +62%</p>
+                <p class="text-sm">Improvement in Net / Operational Margins</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- SLIDE 11: DEBT ANALYSIS & LIQUIDITY (Bar Chart) -->
+    <div id="slide-11" class="presentation-slide">
+        <h1 class="text-4xl header-title border-b pb-3 mb-6">Debt Analysis: Categories and Risk Exposure (€10.7M Total)</h1>
+        <div class="chart-container">
+            <canvas id="debtAnalysisChart"></canvas>
+        </div>
+        <div class="grid grid-cols-3 mt-2 border-t pt-3">
+            <div>
+                <p class="text-sm font-medium text-gray-700">Supplier Debts:</p>
+                <p class="text-lg font-extrabold" style="color: #FF355E;">€6.2M (58% of Total)</p>
+            </div>
+            <div>
+                <p class="text-sm font-medium text-gray-700">Overdue Tax Debts:</p>
+                <p class="text-lg font-extrabold text-red-600">€573K (+1,129% YOY)</p>
+            </div>
+            <div>
+                <p class="text-sm font-medium text-gray-700">Bank Debt:</p>
+                <p class="text-lg font-extrabold text-green-600">€848K (+254% YOY)</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- SLIDE 12: RISK ANALYSIS (Radar Chart) -->
+    <div id="slide-12" class="presentation-slide">
+        <h1 class="text-4xl header-title border-b pb-3 mb-6">Risk Assessment: Focused Attention Areas</h1>
+        <div class="chart-container flex justify-center items-center mb-4">
+            <div class="w-2/3 h-full">
+                <canvas id="riskRadarChart"></canvas>
+            </div>
+        </div>
+        <div class="grid grid-cols-2 gap-4 text-gray-700 text-lg mt-4">
+            <p class="flex items-center"><i data-lucide="alert-triangle" class="text-red-500 w-5 h-5 mr-2 flex-shrink-0"></i> <strong>HIGH RISK:</strong> Accounts Receivable Management (€8.2M at risk)</p>
+            <p class="flex items-center"><i data-lucide="trending-up" class="text-orange-500 w-5 h-5 mr-2 flex-shrink-0"></i> <strong>MEDIUM RISK:</strong> Tax & Supplier Compliance</p>
+        </div>
+    </div>
+
+    <!-- SLIDE 13: FINANCIAL STRENGTHS -->
+    <div id="slide-13" class="presentation-slide">
+        <h1 class="text-4xl header-title border-b pb-3 mb-8">Key Financial Strengths</h1>
+        <ul class="space-y-4 text-lg icon-list mt-10 text-gray-700">
+            <li><i data-lucide="banknote" class="text-green-600"></i> <strong>Strong Liquidity Position:</strong> &nbsp  €5.5M available cash reserves.</li>
+            <li><i data-lucide="pie-chart" class="text-green-600"></i> <strong>Improved Profitability:</strong> &nbsp Net margin of 3.2% shows operational efficiency gains.</li>
+            <li><i data-lucide="users" class="text-green-600"></i> <strong>Investment in Human Capital:</strong> Significant employee growth (+33%) and higher employee participation costs (+513%).</li>
+            <li><i data-lucide="briefcase" class="text-green-600"></i> <strong>Diversified Revenue Streams:</strong> &nbsp Strong, focused income primarily from high-margin services.</li>
+            <li><i data-lucide="shield" class="text-green-600"></i> <strong>Solid Equity Base:</strong> &nbsp €5.5M in equity supports future strategic investments.</li>
+            <li><i data-lucide="star" class="text-green-600"></i> <strong>Good Credit Rating:</strong> &nbsp Solid 7.7/10 rating with no overdue state debts (based on the provided rating).</li>
+        </ul>
+    </div>
+
+    <!-- SLIDE 14: AREAS REQUIRING ATTENTION -->
+    <div id="slide-14" class="presentation-slide">
+        <h1 class="text-4xl header-title border-b pb-3 mb-8">Areas Requiring Immediate Attention</h1>
+        <div class="grid grid-cols-2 gap-8 mt-10">
+            <div class="p-6 bg-red-50 rounded-lg border-l-4 border-red-500">
+                <h3 class="text-2xl font-semibold text-red-700 mb-3">Compliance & Debts</h3>
+                <ul class="space-y-2 text-lg text-gray-700 icon-list">
+                    <li><i data-lucide="x-circle" class="text-red-500"></i> Overdue Taxes: €573K (1,129% increase)</li>
+                    <li><i data-lucide="x-circle" class="text-red-500"></i> Social Security Debts: €581K (173% increase)</li>
+                    <li><i data-lucide="x-circle" class="text-red-500"></i> Total Debt Increase: +52% YOY (€10.7M total)</li>
+                </ul>
+            </div>
+            <div class="p-6 bg-yellow-50 rounded-lg border-l-4 border-yellow-500">
+                <h3 class="text-2xl font-semibold text-yellow-700 mb-3">Working Capital Management</h3>
+                <ul class="space-y-2 text-lg text-gray-700 icon-list">
+                    <li><i data-lucide="alert-triangle" class="text-yellow-600"></i> High Accounts Receivable: €8.2M at risk (+127% growth).</li>
+                    <li><i data-lucide="alert-triangle" class="text-yellow-600"></i> Supplier Debts: €6.2M (+54% increase).</li>
+                    <li><i data-lucide="alert-triangle" class="text-yellow-600"></i> Working Capital Pressure: Needs tighter control due to rapid scaling.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- SLIDE 15: COMPETITIVE LANDSCAPE -->
+    <div id="slide-15" class="presentation-slide">
+        <h1 class="text-4xl header-title border-b pb-3 mb-6">🧠 Resumo Estratégico - Análise Competitiva</h1>
+        <p class="text-center text-xl font-semibold text-gray-700 mt-4 mb-6">Factorial is the optimal choice for AHL's size and growth trajectory.</p>
+        
+        <!-- Comparison Table -->
+        <div class="overflow-x-auto">
+            <table class="w-full border-collapse border border-gray-300 rounded-lg overflow-hidden shadow-lg">
+                <thead>
+                    <tr class="bg-gray-100">
+                        <th class="border border-gray-300 px-4 py-3 text-left font-semibold text-gray-800">Vendor</th>
+                        <th class="border border-gray-300 px-4 py-3 text-left font-semibold text-gray-800">Target Segment</th>
+                        <th class="border border-gray-300 px-4 py-3 text-left font-semibold text-gray-800">Differentiator</th>
+                        <th class="border border-gray-300 px-4 py-3 text-left font-semibold text-gray-800">Time to Value</th>
+                        <th class="border border-gray-300 px-4 py-3 text-left font-semibold text-gray-800">Cost</th>
+                        <th class="border border-gray-300 px-4 py-3 text-left font-semibold text-gray-800">Complexity</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="hover:bg-red-50 transition-colors">
+                        <td class="border border-gray-300 px-4 py-3 font-bold" style="color: #FF355E;">FACTORIAL</td>
+                        <td class="border border-gray-300 px-4 py-3">SMB (10–500)</td>
+                        <td class="border border-gray-300 px-4 py-3">Speed & Simplicity</td>
+                        <td class="border border-gray-300 px-4 py-3">⚡ 2–4 weeks</td>
+                        <td class="border border-gray-300 px-4 py-3">💰 Low</td>
+                        <td class="border border-gray-300 px-4 py-3">🟢 Low</td>
+                    </tr>
+                    <tr class="hover:bg-yellow-50 transition-colors">
+                        <td class="border border-gray-300 px-4 py-3 font-bold text-yellow-700">PERSONIO</td>
+                        <td class="border border-gray-300 px-4 py-3">Mid-market (50–2000)</td>
+                        <td class="border border-gray-300 px-4 py-3">Compliance & Structure</td>
+                        <td class="border border-gray-300 px-4 py-3">⏱️ 3–6 months</td>
+                        <td class="border border-gray-300 px-4 py-3">💶 Mid</td>
+                        <td class="border border-gray-300 px-4 py-3">🟠 Medium</td>
+                    </tr>
+                    <tr class="hover:bg-red-50 transition-colors">
+                        <td class="border border-gray-300 px-4 py-3 font-bold text-red-700">WORKDAY</td>
+                        <td class="border border-gray-300 px-4 py-3">Enterprise (1000+)</td>
+                        <td class="border border-gray-300 px-4 py-3">Integration & Power</td>
+                        <td class="border border-gray-300 px-4 py-3">🕒 6–12 months</td>
+                        <td class="border border-gray-300 px-4 py-3">💸 High</td>
+                        <td class="border border-gray-300 px-4 py-3">🔴 High</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        
+        <!-- Key Insight -->
+        <div class="mt-6 p-4 rounded-lg" style="background-color: #FFF0F2; border-left: 4px solid #FF355E;">
+            <p class="text-lg font-semibold text-center" style="color: #CC1A3A;">
+                🎯 AHL (77 employees) fits perfectly in Factorial's sweet spot!
+            </p>
+        </div>
+    </div>
+
+    <!-- SLIDE 16: FACTORIAL DIFFERENTIATION -->
+    <div id="slide-16" class="presentation-slide">
+        <h1 class="text-4xl header-title border-b pb-3 mb-8">Factorial's Unique Value Proposition</h1>
+        <div class="grid grid-cols-2 gap-8 mt-8">
+            <div>
+                <h3 class="text-2xl font-semibold mb-4" style="color: #FF355E;">Perfect Fit for AHL</h3>
+                <ul class="space-y-3 text-lg text-gray-700 icon-list">
+                    <li><i data-lucide="users" class="text-green-600"></i> <strong>Size Optimization:</strong> Designed for 50-500 employees (AHL: 77)</li>
+                    <li><i data-lucide="trending-up" class="text-green-600"></i> <strong>Growth Ready:</strong> Scales with 154% growth trajectory</li>
+                    <li><i data-lucide="globe" class="text-green-600"></i> <strong>International:</strong> Multi-country support (France, Morocco, Africa)</li>
+                    <li><i data-lucide="briefcase" class="text-green-600"></i> <strong>Industry Focus:</strong> Engineering & project-based companies</li>
+                </ul>
+            </div>
+            <div>
+                <h3 class="text-2xl font-semibold mb-4" style="color: #FF355E;">Competitive Advantages</h3>
+                <ul class="space-y-3 text-lg text-gray-700 icon-list">
+                    <li><i data-lucide="zap" style="color: #FF355E;"></i> <strong>10x Faster:</strong> 2-4 weeks vs 3-12 months</li>
+                    <li><i data-lucide="euro" style="color: #FF355E;"></i> <strong>60-80% Cheaper:</strong> vs Workday pricing</li>
+                    <li><i data-lucide="mouse-pointer" style="color: #FF355E;"></i> <strong>Zero Learning Curve:</strong> Intuitive interface</li>
+                    <li><i data-lucide="plug" style="color: #FF355E;"></i> <strong>5,000+ Integrations:</strong> vs 200+ competitors</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- SLIDE 17: PROJECT COST MANAGEMENT SOLUTION -->
+    <div id="slide-17" class="presentation-slide">
+        <h1 class="text-4xl header-title border-b pb-3 mb-6">Factorial's Project Cost Management Solution</h1>
+        <div class="grid grid-cols-3 gap-4 mt-6">
+            <div class="p-4 rounded-lg border-l-4" style="background-color: #FFF0F2; border-color: #FF355E;">
+                <h3 class="text-lg font-semibold flex items-center mb-3" style="color: #CC1A3A;"><i data-lucide="target" class="w-5 h-5 mr-2 flex-shrink-0" style="color: #FF355E;"></i> 1. Real-Time Project Cost Tracking</h3>
+                <ul class="text-sm text-gray-700 list-disc list-inside ml-4 space-y-1">
+                    <li>Monitor project expenses in real-time with automated categorization</li>
+                    <li>Track labor costs by project with time tracking integration</li>
+                    <li>Generate instant alerts when costs exceed budget thresholds</li>
+                    <li>Compare actual vs. budgeted costs with visual dashboards</li>
+                </ul>
+            </div>
+            <div class="p-4 rounded-lg border-l-4" style="background-color: #FFF0F2; border-color: #FF355E;">
+                <h3 class="text-lg font-semibold flex items-center mb-3" style="color: #CC1A3A;"><i data-lucide="bar-chart-3" class="w-5 h-5 mr-2 flex-shrink-0" style="color: #FF355E;"></i> 2. Advanced Analytics & Reporting</h3>
+                <ul class="text-sm text-gray-700 list-disc list-inside ml-4 space-y-1">
+                    <li>Predictive cost modeling based on historical project data</li>
+                    <li>Profitability analysis by project, client, and team</li>
+                    <li>Automated executive reports for project portfolio management</li>
+                    <li>Benchmarking against industry standards and past performance</li>
+                </ul>
+            </div>
+            <div class="p-4 rounded-lg border-l-4" style="background-color: #FFF0F2; border-color: #FF355E;">
+                <h3 class="text-lg font-semibold flex items-center mb-3" style="color: #CC1A3A;"><i data-lucide="settings" class="w-5 h-5 mr-2 flex-shrink-0" style="color: #FF355E;"></i> 3. Integrated Workflow Automation</h3>
+                <ul class="text-sm text-gray-700 list-disc list-inside ml-4 space-y-1">
+                    <li>Automated expense approval workflows with budget controls</li>
+                    <li>Seamless integration with existing accounting systems</li>
+                    <li>Mobile app for on-the-go expense management</li>
+                    <li>Custom approval hierarchies based on project size and type</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- SLIDE 18: EXPECTED IMPACT & ROI -->
+    <div id="slide-18" class="presentation-slide">
+        <h1 class="text-4xl header-title border-b pb-3 mb-4">Expected Impact & ROI for AHL</h1>
+        <div class="grid grid-cols-3 gap-3 mt-4">
+            <div class="p-3 bg-green-50 rounded-lg border-l-4 border-green-500">
+                <h3 class="text-base font-semibold text-green-700 mb-2 flex items-center"><i data-lucide="trending-up" class="w-4 h-4 mr-2 flex-shrink-0" style="color: #FF355E;"></i> Financial Impact</h3>
+                <div class="space-y-2">
+                    <div>
+                        <p class="text-sm font-semibold text-green-700">Cost Control Improvement</p>
+                        <p class="text-xl font-extrabold text-green-800">15-25%</p>
+                        <p class="text-xs text-gray-600">Better project cost visibility</p>
+                    </div>
+                    <div>
+                        <p class="text-sm font-semibold text-green-700">Annual Savings</p>
+                        <p class="text-xl font-extrabold text-green-800">€200K - €400K</p>
+                        <p class="text-xs text-gray-600">Based on improved efficiency</p>
+                    </div>
+                    <div>
+                        <p class="text-sm font-semibold text-green-700">ROI</p>
+                        <p class="text-xl font-extrabold text-green-800">1,400%</p>
+                        <p class="text-xs text-gray-600">Conservative estimate</p>
+                    </div>
+                </div>
+            </div>
+            <div class="p-3 bg-blue-50 rounded-lg border-l-4 border-blue-500">
+                <h3 class="text-base font-semibold text-blue-700 mb-2 flex items-center"><i data-lucide="clock" class="w-4 h-4 mr-2 flex-shrink-0" style="color: #FF355E;"></i> Operational Benefits</h3>
+                <div class="space-y-2">
+                    <div>
+                        <p class="text-sm font-semibold text-blue-700">Time Savings</p>
+                        <p class="text-xl font-extrabold text-blue-800">8-12 Hours/Week</p>
+                        <p class="text-xs text-gray-600">Reduced manual processes</p>
+                    </div>
+                    <div>
+                        <p class="text-sm font-semibold text-blue-700">Accuracy Improvement</p>
+                        <p class="text-xl font-extrabold text-blue-800">30-40%</p>
+                        <p class="text-xs text-gray-600">Better cost tracking</p>
+                    </div>
+                    <div>
+                        <p class="text-sm font-semibold text-blue-700">Payback Period</p>
+                        <p class="text-xl font-extrabold text-blue-800">2-3 Months</p>
+                        <p class="text-xs text-gray-600">Time to recover investment</p>
+                    </div>
+                </div>
+            </div>
+            <div class="p-3 rounded-lg border-l-4" style="background-color: #FFF0F2; border-color: #FF355E;">
+                <h3 class="text-base font-semibold mb-2 flex items-center" style="color: #CC1A3A;"><i data-lucide="calculator" class="w-4 h-4 mr-2 flex-shrink-0" style="color: #FF355E;"></i> Investment Analysis</h3>
+                <div class="space-y-2">
+                    <div>
+                        <p class="text-sm font-semibold" style="color: #CC1A3A;">Annual Investment</p>
+                        <p class="text-xl font-extrabold" style="color: #FF355E;">€13.8K</p>
+                        <p class="text-xs text-gray-600">Factorial subscription (77 employees)</p>
+                    </div>
+                    <div>
+                        <p class="text-sm font-semibold" style="color: #CC1A3A;">Conservative Savings</p>
+                        <p class="text-xl font-extrabold" style="color: #FF355E;">€200K</p>
+                        <p class="text-xs text-gray-600">Minimum annual benefit</p>
+                    </div>
+                    <div>
+                        <p class="text-sm font-semibold" style="color: #CC1A3A;">3-Year Value</p>
+                        <p class="text-xl font-extrabold" style="color: #FF355E;">€600K</p>
+                        <p class="text-xs text-gray-600">Total conservative benefit</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="mt-4 p-3 rounded-lg" style="background-color: #FFF0F2; border-left: 4px solid #FF355E;">
+            <h3 class="text-base font-semibold mb-1" style="color: #CC1A3A;">Conservative & Realistic Projections</h3>
+            <p class="text-xs text-gray-600">
+                Based on AHL's financial performance (€45.7M revenue, 3.2% margin), focusing on <strong>operational efficiency gains</strong> and <strong>cost control improvements</strong>. ROI reflects conservative industry benchmarks.
+            </p>
+        </div>
+    </div>
+
+
+    <!-- SLIDE 19: Q&A -->
+    <div id="slide-19" class="presentation-slide flex flex-col justify-center items-center text-center">
+        <h1 class="text-6xl header-title mb-10">Questions & Discussion</h1>
+        <p class="text-3xl text-gray-600 mb-10">We are ready to address your specific challenges and goals.</p>
+        <div class="text-left text-xl text-gray-700">
+            <p class="font-bold">Contact Information:</p>
+            <p>Victor Gutierrez</p>
+            <p>victor.gutierrez@factorial.co | +55 11 3197-0429</p>
+        </div>
+    </div>
+
+    <!-- SLIDE 20: THANK YOU -->
+    <div id="slide-20" class="presentation-slide flex flex-col justify-center items-center text-center">
+        <h1 class="text-6xl header-title mb-6">Thank You</h1>
+        <p class="text-3xl text-gray-700 font-light mb-12">Looking forward to supporting AHL's continued growth and financial optimization.</p>
+        <p class="footer-logo text-4xl">FACTORIAL <span class="text-gray-800">FINANCE</span></p>
+        <p class="text-lg text-gray-500 mt-4">October 22, 2025</p>
+    </div>
+
+    <!-- --------------------------------- SLIDE CONTENT END --------------------------------- -->
+</div>
+
+<script>
+    const totalSlides = 20;
+    let currentSlideIndex = 1;
+    const slides = [];
+
+    // --- Data Definition for Charts ---
+    const chartData = {
+        // Slide 5 Data (Growth)
+        growth: {
+            metrics: ['Revenue', 'Profit', 'Assets', 'Equity', 'Employees'],
+            '2023': [45.7, 1.5, 16.2, 5.5, 77],
+            '2022': [18.0, 0.4, 11.1, 4.0, 58], // Calculated based on growth %
+            growthPercent: [154.2, 273.0, 46.2, 36.1, 33.0]
+        },
+        // Slide 7 Data (Composition)
+        composition: {
+            assets: { labels: ['Current Assets (97%)', 'Fixed Assets (3%)'], data: [97, 3] },
+            liabilities: { labels: ['Total Debt (66%)', 'Equity (34%)'], data: [66, 34] }
+        },
+        // Slide 8 Data (Mix)
+        mix: {
+            revenue: { labels: ['Engineering Services (99.7%)', 'Goods Sales (0.3%)'], data: [99.7, 0.3] },
+            expense: { labels: ['External Purchases (67%)', 'Personnel Costs (33%)'], data: [67, 33] }
+        },
+        // Slide 9 Data (Margins)
+        margins: {
+            labels: ['Net Margin', 'Operational Margin'],
+            '2023': [3.2, 4.7],
+            '2022': [2.1, 2.9],
+        },
+        // Slide 10 Data (Debt Breakdown)
+        debt: {
+            labels: ['Supplier Debts', 'Other Debts', 'Bank Debt', 'Tax Debts (Overdue)', 'Social Security'],
+            data: [6.2, 1.2, 0.848, 0.573, 0.581], // In Millions of Euros (€M)
+        },
+        // Slide 11 Data (Risk Radar)
+        risk: {
+            labels: ['AR Management', 'Tax Compliance', 'Supplier Relationship', 'Social Security', 'Bank Debt'],
+            scores: [5, 4, 3, 2, 1] // 5=High, 1=Low
+        }
+    };
+
+    // --- Chart Rendering Functions ---
+    
+    // Fallback function to show data as table when Chart.js is not available
+    function showChartFallback(canvasId, title, data) {
+        const canvas = document.getElementById(canvasId);
+        if (!canvas) return;
+        
+        let tableHTML = `<div style="padding: 20px; background: white; border-radius: 8px;">
+            <h3 style="margin: 0 0 15px 0; color: #1e3a8a; font-size: 18px;">${title}</h3>
+            <table style="width: 100%; border-collapse: collapse; font-family: Arial, sans-serif;">
+                <thead>
+                    <tr style="background: #f8fafc;">
+                        <th style="padding: 10px; border: 1px solid #e2e8f0; text-align: left;">Métrica</th>
+                        <th style="padding: 10px; border: 1px solid #e2e8f0; text-align: right;">2022</th>
+                        <th style="padding: 10px; border: 1px solid #e2e8f0; text-align: right;">2023</th>
+                        <th style="padding: 10px; border: 1px solid #e2e8f0; text-align: right;">Crescimento</th>
+                    </tr>
+                </thead>
+                <tbody>`;
+        
+        if (data.metrics && data['2022'] && data['2023']) {
+            data.metrics.forEach((metric, index) => {
+                const value2022 = data['2022'][index];
+                const value2023 = data['2023'][index];
+                const growth = data.growthPercent ? data.growthPercent[index] : 0;
+                
+                tableHTML += `
+                    <tr>
+                        <td style="padding: 10px; border: 1px solid #e2e8f0; font-weight: 600;">${metric}</td>
+                        <td style="padding: 10px; border: 1px solid #e2e8f0; text-align: right;">${formatValue(value2022, metric)}</td>
+                        <td style="padding: 10px; border: 1px solid #e2e8f0; text-align: right; color: #3b82f6; font-weight: 600;">${formatValue(value2023, metric)}</td>
+                        <td style="padding: 10px; border: 1px solid #e2e8f0; text-align: right; color: #10b981; font-weight: 600;">+${growth.toFixed(1)}%</td>
+                    </tr>`;
+            });
+        }
+        
+        tableHTML += `</tbody></table></div>`;
+        
+        canvas.parentNode.innerHTML = tableHTML;
+    }
+    
+    // Helper function to format values
+    function formatValue(value, metric) {
+        if (metric === 'Employees') {
+            return value.toFixed(0) + ' funcionários';
+        } else {
+            return '€' + value.toFixed(1) + 'M';
+        }
+    }
+    
+    // Replace Lucide icons with text fallbacks
+    function replaceIconsWithText() {
+        const iconElements = document.querySelectorAll('i[data-lucide]');
+        const iconMap = {
+            'info': 'ℹ️',
+            'bar-chart-3': '📊',
+            'chevrons-right': '▶️',
+            'map': '🗺️',
+            'message-square': '💬',
+            'briefcase': '💼',
+            'wrench': '🔧',
+            'heart-handshake': '🤝',
+            'map-pin': '📍',
+            'file-text': '📄',
+            'globe': '🌍',
+            'dollar-sign': '💰',
+            'trending-up': '📈',
+            'users': '👥',
+            'check-circle': '✅',
+            'alert-triangle': '⚠️',
+            'x-circle': '❌',
+            'banknote': '💵',
+            'pie-chart': '🥧',
+            'shield': '🛡️',
+            'star': '⭐',
+            'rocket': '🚀',
+            'clipboard-check': '📋',
+            'users-2': '👥',
+            'target': '🎯',
+            'wallet': '👛',
+            'repeat': '🔄',
+            'savings': '💾',
+            'calendar': '📅',
+            'message-square-check': '✅',
+            'zap': '⚡',
+            'award': '🏆',
+            'bar-chart-2': '📊',
+            'minus': '➖',
+            'plus': '➕',
+            'clock': '🕐',
+            'chevron-right': '▶️',
+            'building': '🏢',
+            'layers': '📚',
+            'brain': '🧠',
+            'mouse-pointer': '🖱️',
+            'plug': '🔌',
+            'settings': '⚙️',
+            'euro': '💶'
+        };
+        
+        iconElements.forEach(element => {
+            const iconName = element.getAttribute('data-lucide');
+            const fallbackText = iconMap[iconName] || '•';
+            element.innerHTML = fallbackText;
+            element.style.fontSize = '1.2em';
+        });
+    }
+
+    // Slide 5: Growth Chart
+    function renderGrowthChart() {
+        if (typeof Chart === 'undefined') {
+            console.warn('Chart.js não disponível, mostrando dados em formato de tabela');
+            showChartFallback('growthChart', 'Financial Growth Analysis', chartData.growth);
+            return;
+        }
+        
+        const ctx = document.getElementById('growthChart').getContext('2d');
+        new Chart(ctx, {
+            type: 'bar',
+            data: {
+                labels: chartData.growth.metrics,
+                datasets: [
+                    {
+                        label: '2022 Base (€M / Units)',
+                        data: chartData.growth['2022'],
+                        backgroundColor: '#9ca3af', // Gray
+                        borderRadius: 4,
+                    },
+                    {
+                        label: '2023 Value (€M / Units)',
+                        data: chartData.growth['2023'],
+                        backgroundColor: '#FF355E', // Radical Red
+                        borderRadius: 4,
+                    }
+                ]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                plugins: {
+                    title: { display: false },
+                    legend: { position: 'top' },
+                    tooltip: {
+                        callbacks: {
+                            label: (context) => {
+                                const value = context.parsed.y;
+                                const metric = context.label;
+                                let formattedValue;
+                                if (metric === 'Employees') {
+                                    formattedValue = value.toFixed(0) + ' Employees';
+                                } else {
+                                    formattedValue = '€' + value.toFixed(1) + 'M';
+                                }
+                                return `${context.dataset.label}: ${formattedValue}`;
+                            }
+                        }
+                    }
+                },
+                scales: {
+                    y: {
+                        beginAtZero: true,
+                        title: { display: true, text: 'Value (€M / Units)' }
+                    }
+                }
+            }
+        });
+    }
+
+    // Slide 7: Assets Composition Pie Chart
+    function renderAssetsCompositionChart() {
+        if (typeof Chart === 'undefined') {
+            console.warn('Chart.js não disponível para gráfico de ativos');
+            return;
+        }
+        
+        const ctx = document.getElementById('assetsCompositionChart').getContext('2d');
+        new Chart(ctx, {
+            type: 'pie',
+            data: {
+                labels: chartData.composition.assets.labels,
+                datasets: [{
+                    data: chartData.composition.assets.data,
+                    backgroundColor: ['#10b981', '#9ca3af'], // Green, Gray
+                    hoverOffset: 4
+                }]
+            },
+            options: { responsive: true, maintainAspectRatio: false, plugins: { legend: { position: 'right' }, title: { display: false } } }
+        });
+    }
+
+    // Slide 7: Liabilities Composition Pie Chart
+    function renderLiabilitiesCompositionChart() {
+        const ctx = document.getElementById('liabilitiesCompositionChart').getContext('2d');
+        new Chart(ctx, {
+            type: 'pie',
+            data: {
+                labels: chartData.composition.liabilities.labels,
+                datasets: [{
+                    data: chartData.composition.liabilities.data,
+                    backgroundColor: ['#ef4444', '#FF355E'], // Red, Radical Red
+                    hoverOffset: 4
+                }]
+            },
+            options: { responsive: true, maintainAspectRatio: false, plugins: { legend: { position: 'right' }, title: { display: false } } }
+        });
+    }
+
+    // Slide 8: Revenue Mix Pie Chart
+    function renderRevenueMixChart() {
+        const ctx = document.getElementById('revenueMixChart').getContext('2d');
+        new Chart(ctx, {
+            type: 'doughnut',
+            data: {
+                labels: chartData.mix.revenue.labels,
+                datasets: [{
+                    data: chartData.mix.revenue.data,
+                    backgroundColor: ['#FF355E', '#facc15'], // Radical Red, Yellow
+                    hoverOffset: 4
+                }]
+            },
+            options: { responsive: true, maintainAspectRatio: false, plugins: { legend: { position: 'right' }, title: { display: false } } }
+        });
+    }
+
+    // Slide 8: Expense Mix Pie Chart
+    function renderExpenseMixChart() {
+        const ctx = document.getElementById('expenseMixChart').getContext('2d');
+        new Chart(ctx, {
+            type: 'doughnut',
+            data: {
+                labels: chartData.mix.expense.labels,
+                datasets: [{
+                    data: chartData.mix.expense.data,
+                    backgroundColor: ['#fb923c', '#06b6d4'], // Orange, Cyan
+                    hoverOffset: 4
+                }]
+            },
+            options: { responsive: true, maintainAspectRatio: false, plugins: { legend: { position: 'right' }, title: { display: false } } }
+        });
+    }
+
+    // Slide 9: Margin Comparison Chart
+    function renderMarginChart() {
+        const ctx = document.getElementById('marginChart').getContext('2d');
+        new Chart(ctx, {
+            type: 'bar',
+            data: {
+                labels: chartData.margins.labels,
+                datasets: [
+                    {
+                        label: '2022 Margin (%)',
+                        data: chartData.margins['2022'],
+                        backgroundColor: '#6b7280', // Dark Gray
+                        borderRadius: 4,
+                    },
+                    {
+                        label: '2023 Margin (%)',
+                        data: chartData.margins['2023'],
+                        backgroundColor: '#FF355E', // Radical Red
+                        borderRadius: 4,
+                    }
+                ]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                plugins: {
+                    title: { display: false },
+                    legend: { position: 'top' },
+                    tooltip: {
+                        callbacks: {
+                            label: (context) => `${context.dataset.label}: ${context.parsed.y.toFixed(1)}%`
+                        }
+                    }
+                },
+                scales: {
+                    y: {
+                        beginAtZero: true,
+                        title: { display: true, text: 'Margin (%)' },
+                        ticks: { callback: (value) => value + '%' }
+                    }
+                }
+            }
+        });
+    }
+
+    // Slide 10: Debt Analysis Chart
+    function renderDebtAnalysisChart() {
+        const ctx = document.getElementById('debtAnalysisChart').getContext('2d');
+        new Chart(ctx, {
+            type: 'bar',
+            data: {
+                labels: chartData.debt.labels,
+                datasets: [
+                    {
+                        label: 'Debt Amount (€M)',
+                        data: chartData.debt.data,
+                        backgroundColor: (context) => {
+                            const label = context.chart.data.labels[context.dataIndex];
+                            if (label.includes('Tax Debts (Overdue)') || label.includes('Social Security')) return '#ef4444'; // Red for compliance risk
+                            return '#FF355E'; // Radical Red for others
+                        },
+                        borderRadius: 6,
+                    }
+                ]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                indexAxis: 'y',
+                plugins: {
+                    title: { display: false },
+                    legend: { display: false },
+                    tooltip: {
+                        callbacks: {
+                            label: (context) => `€${context.parsed.x.toFixed(2)} Million`
+                        }
+                    }
+                },
+                scales: {
+                    x: {
+                        beginAtZero: true,
+                        title: { display: true, text: 'Amount (€M)' },
+                        ticks: { callback: (value) => '€' + value.toFixed(1) + 'M' }
+                    }
+                }
+            }
+        });
+    }
+
+    // Slide 11: Risk Radar Chart
+    function renderRiskRadarChart() {
+        const ctx = document.getElementById('riskRadarChart').getContext('2d');
+        new Chart(ctx, {
+            type: 'radar',
+            data: {
+                labels: chartData.risk.labels,
+                datasets: [{
+                    label: 'Risk Score (1=Low, 5=High)',
+                    data: chartData.risk.scores,
+                    backgroundColor: 'rgba(255, 53, 94, 0.2)',
+                    borderColor: '#FF355E',
+                    pointBackgroundColor: '#FF355E',
+                    pointBorderColor: '#fff',
+                    pointHoverBackgroundColor: '#fff',
+                    pointHoverBorderColor: '#FF355E'
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                plugins: {
+                    legend: { display: false },
+                    tooltip: {
+                        callbacks: {
+                            label: (context) => {
+                                const score = context.parsed.r;
+                                let severity = '';
+                                if (score >= 5) severity = 'HIGH';
+                                else if (score >= 3) severity = 'MEDIUM';
+                                else severity = 'LOW';
+                                return `${context.label}: Score ${score} (${severity})`;
+                            }
+                        }
+                    }
+                },
+                scales: {
+                    r: {
+                        angleLines: { display: false },
+                        suggestedMin: 0,
+                        suggestedMax: 5,
+                        ticks: {
+                            stepSize: 1,
+                            callback: (value) => {
+                                if (value === 5) return 'High Risk';
+                                if (value === 3) return 'Medium';
+                                if (value === 1) return 'Low';
+                                return '';
+                            }
+                        }
+                    }
+                }
+            }
+        });
+    }
+
+
+    // --- Slide Management Logic ---
+
+    function setupSlides() {
+        for (let i = 1; i <= totalSlides; i++) {
+            const slide = document.getElementById(`slide-${i}`);
+            if (slide) {
+                slides.push(slide);
+            }
+        }
+        showSlide(currentSlideIndex);
+    }
+
+    function showSlide(index) {
+        if (index < 1 || index > totalSlides) return;
+
+        // Hide all slides
+        slides.forEach(slide => slide.style.display = 'none');
+
+        // Show the current slide
+        const currentSlide = slides[index - 1];
+        if (currentSlide) {
+            currentSlide.style.display = 'flex';
+            currentSlide.style.flexDirection = 'column';
+            currentSlideIndex = index;
+
+            // Update page number
+            document.getElementById('pageNumber').textContent = `Slide ${currentSlideIndex} / ${totalSlides}`;
+            
+            // Enable/disable buttons
+            document.getElementById('prevBtn').disabled = currentSlideIndex === 1;
+            document.getElementById('nextBtn').disabled = currentSlideIndex === totalSlides;
+            document.getElementById('prevBtn').classList.toggle('opacity-50', currentSlideIndex === 1);
+            document.getElementById('nextBtn').classList.toggle('opacity-50', currentSlideIndex === totalSlides);
+
+            // Render charts for specific slides
+            if (index === 6) renderGrowthChart();
+            if (index === 8) { renderAssetsCompositionChart(); renderLiabilitiesCompositionChart(); }
+            if (index === 9) { renderRevenueMixChart(); renderExpenseMixChart(); }
+            if (index === 10) renderMarginChart();
+            if (index === 11) renderDebtAnalysisChart();
+            if (index === 12) renderRiskRadarChart();
+
+            // Re-render Lucide icons on the current slide
+            if (typeof lucide !== 'undefined' && lucide.createIcons) {
+                lucide.createIcons();
+            } else {
+                console.warn('Lucide icons não disponível, usando fallback');
+                // Replace icon elements with text fallbacks
+                replaceIconsWithText();
+            }
+        }
+    }
+
+    function goToNextSlide() {
+        showSlide(currentSlideIndex + 1);
+    }
+
+    function goToPrevSlide() {
+        showSlide(currentSlideIndex - 1);
+    }
+
+    // Event Listeners
+    document.getElementById('nextBtn').addEventListener('click', goToNextSlide);
+    document.getElementById('prevBtn').addEventListener('click', goToPrevSlide);
+
+    // Keyboard navigation
+    document.addEventListener('keydown', (event) => {
+        if (event.key === 'ArrowRight' || event.key === ' ') {
+            goToNextSlide();
+        } else if (event.key === 'ArrowLeft') {
+            goToPrevSlide();
+        }
+    });
+
+    // Check if required libraries are loaded
+    function checkLibraries() {
+        const errors = [];
+        
+        if (typeof Chart === 'undefined') {
+            errors.push('Chart.js não foi carregado');
+        }
+        
+        if (typeof lucide === 'undefined') {
+            errors.push('Lucide icons não foi carregado');
+        }
+        
+        if (errors.length > 0) {
+            console.error('Erros de carregamento:', errors);
+            showErrorMessage(errors);
+            return false;
+        }
+        
+        return true;
+    }
+    
+    // Show error message to user
+    function showErrorMessage(errors) {
+        const errorDiv = document.createElement('div');
+        errorDiv.style.cssText = `
+            position: fixed;
+            top: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: #fee2e2;
+            border: 1px solid #fca5a5;
+            color: #dc2626;
+            padding: 15px 20px;
+            border-radius: 8px;
+            z-index: 1000;
+            max-width: 500px;
+            text-align: center;
+        `;
+        errorDiv.innerHTML = `
+            <h3 style="margin: 0 0 10px 0; font-weight: bold;">⚠️ Problema de Carregamento</h3>
+            <p style="margin: 0 0 10px 0;">As seguintes bibliotecas não carregaram:</p>
+            <ul style="margin: 0; padding-left: 20px; text-align: left;">
+                ${errors.map(error => `<li>${error}</li>`).join('')}
+            </ul>
+            <p style="margin: 10px 0 0 0; font-size: 14px;">
+                <strong>Solução:</strong> Verifique sua conexão com a internet e recarregue a página.
+            </p>
+        `;
+        document.body.appendChild(errorDiv);
+        
+        // Remove error message after 10 seconds
+        setTimeout(() => {
+            if (errorDiv.parentNode) {
+                errorDiv.parentNode.removeChild(errorDiv);
+            }
+        }, 10000);
+    }
+    
+    // Wait for libraries to load before initializing
+    function waitForLibraries() {
+        let attempts = 0;
+        const maxAttempts = 50; // 5 seconds max wait
+        
+        const checkInterval = setInterval(() => {
+            attempts++;
+            
+            if (checkLibraries()) {
+                clearInterval(checkInterval);
+                setupSlides();
+                console.log('✅ Todas as bibliotecas carregadas com sucesso!');
+            } else if (attempts >= maxAttempts) {
+                clearInterval(checkInterval);
+                console.error('❌ Timeout: Bibliotecas não carregaram a tempo');
+                // Try to setup slides anyway with fallbacks
+                setupSlides();
+            }
+        }, 100);
+    }
+    
+    // Start the application
+    waitForLibraries();
+</script>
+
+</body>
+</html>
